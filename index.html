@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Cambiar Variables</title>
+</head>
+<body>
+    <div class="controls">
+        <label for="spacing"> Espaciado: </label>
+        <input type="range" name="spacing" min="10" max="200" val="10" data-sizing="px"> 
+        <!-- El data-sizung, permite enviar al DOM una valor sin necesidad de usar el elemento. Solo usando dataset.sizing, lo que esta luego de la coma, es el nombre que tiene la propiedad -->
+        <label for="blur">Desenfoque:</label>
+        <input type="range" name="blur" min="0" max="200" value="10" data-sizing="px">
+        <label for="base"> Color: </label>
+        <input type="color" name="base" value="#00000">        
+    </div>           
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+    <script src="code.js"></script>
+</body>
+</html>
